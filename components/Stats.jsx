@@ -18,7 +18,6 @@ const Stats = () => {
       .request(options)
       .then(function (response) {
         setStats(response.data.data);
-        console.log(response.data.data);
       })
       .catch(function (error) {
         console.error(error);
