@@ -1,6 +1,6 @@
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import SearchIcon from "@mui/icons-material/Search";
+import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="flex items-center justify-between border-b px-8 md:px-32 py-4 border-gray-300 ">
@@ -18,9 +18,11 @@ const Navbar = () => {
             <SearchIcon className="text-gray-600" />
           </div>
         </p> */}
-        <p className="cursor-pointer flex items-center">
-          <GitHubIcon className="text-slate-900" />
-        </p>
+        <Link href="https://github.com/santhosh-cloud/crypto-tracker">
+          <p className="cursor-pointer flex items-center">
+            <GitHubIcon className="text-slate-900" />
+          </p>
+        </Link>
       </div>
     </div>
   );
